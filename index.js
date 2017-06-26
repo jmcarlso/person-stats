@@ -1,13 +1,12 @@
 
 
 function changedHeading(ev){
-    debugger
-
-p.textContent = 'Clickety Click'
+    ev.preventDefault()
+    const heading = document.querySelector('h1')
+    const f = ev.target
+    const name = f.personName.value
+heading.textContent = name
 }
 
-const btn = document.querySelector('button')
-btn.addEventListener('click', changedHeading)
-
-const p = document.querySelector('#instructions')
-p.addEventListener('click', changedHeading)
+const personForm = document.querySelector('#person-form')
+personForm.addEventListener('submit', changedHeading)
