@@ -10,6 +10,8 @@ function changedHeading(ev){
     
     stat.textContent = name +': ' + statChange
 
+    var color = document.getElementById("color").value;
+    stat.style.color = color;
 }
 
 const personForm = document.querySelector('#person-form')
