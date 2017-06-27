@@ -6,8 +6,10 @@ function changedHeading(ev){
     const f = ev.target
     const name = f.personName.value
     const stat = document.querySelector('#hw')
-    const statChange = f.personName.value
-    stat.textContent = name
+    const statChange = f.personAge.value
+    
+    stat.textContent = name +': ' + statChange
+
 }
 
 const personForm = document.querySelector('#person-form')
