@@ -17,14 +17,14 @@ const ageItem =document.createElement('li')
 ageItem.textContent =  `Age: ${statChange}`
 
 const colorItem = document.createElement('li')
-colorItem.textContent = `Favorite Color: ${color}`
-colorItem.style.backgroundColor = color
+colorItem.textContent = `Favorite Color: `
+//colorItem.style.backgroundColor = color
 
 const colorDiv = document.createElement('div')
 colorDiv.style.backgroundColor = color
-colorItem.appendChild(colorDiv)
 colorDiv.style.width = '6rem'
 colorDiv.style.height = '3rem'
+colorItem.appendChild(colorDiv)
 
 list.appendChild(nameItem)
 list.appendChild(ageItem)
