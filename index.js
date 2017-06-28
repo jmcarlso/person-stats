@@ -1,5 +1,13 @@
 
+function renderColor(color){
 
+const colorDiv = document.createElement('div')
+colorDiv.style.backgroundColor = color
+colorDiv.style.width = '6rem'
+colorDiv.style.height = '3rem'
+
+return colorDiv
+}
 function changedHeading(ev){
     ev.preventDefault()
     
@@ -20,11 +28,8 @@ const colorItem = document.createElement('li')
 colorItem.textContent = `Favorite Color: `
 //colorItem.style.backgroundColor = color
 
-const colorDiv = document.createElement('div')
-colorDiv.style.backgroundColor = color
-colorDiv.style.width = '6rem'
-colorDiv.style.height = '3rem'
-colorItem.appendChild(colorDiv)
+
+colorItem.appendChild(renderColor(color))
 
 list.appendChild(nameItem)
 list.appendChild(ageItem)
